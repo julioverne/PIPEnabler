@@ -1,9 +1,9 @@
 include theos/makefiles/common.mk
 
 TWEAK_NAME = PIPEnabler
-PIPEnabler_FILES = Tweak.xm
+PIPEnabler_FILES = pipenabler.xm
 PIPEnabler_LIBRARIES = MobileGestalt
-PIPEnabler_FRAMEWORKS = CydiaSubstrate CoreFoundation Foundation UIKit
+PIPEnabler_FRAMEWORKS = CydiaSubstrate CoreFoundation Foundation UIKit AVKit AVFoundation
 PIPEnabler_LDFLAGS = -Wl,-segalign,4000
 
 export ARCHS = armv7 arm64
